@@ -3742,7 +3742,7 @@ bool IGFD::KeyExplorerFeature::m_FlashableSelectable(const char* label, bool sel
             RenderFrame(bb.Min, bb.Max, col, false, 0.0f);
         }
         if (g.NavId == id) {
-            ImGuiNavRenderCursorFlags flags = ImGuiNavRenderCursorFlags_Compact | ImGuiNavRenderCursorFlags_NoRounding;
+            ImGuiNavRenderCursorFlags flags = ImGuiNavRenderCursorFlags_Compact;
             if (is_multi_select) flags |= ImGuiNavRenderCursorFlags_AlwaysDraw;  // Always show the nav rectangle
             RenderNavCursor(bb, id, flags);
         }
